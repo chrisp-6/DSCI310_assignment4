@@ -4,7 +4,7 @@ author: "Tiffany Timbers & Jordan Bourak"
 bibliography: references.bib
 output:
   bookdown::html_document2 
-  #bookdown::pdf_document2
+  bookdown::pdf_document2
 ---
 
 ```{r, message=FALSE}
