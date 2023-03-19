@@ -25,7 +25,7 @@ The R programming language (R Core Team, 2019) and the following R packages were
 # Results
 
 ```{r, echo=FALSE}
-knitr::include_graphics("results/horse_pops_plot.png")
+knitr::include_graphics("../../results/horse_pops_plot.png")
 ```
 
 Figure 1: Horse populations for all provinces in Canada from 1906 - 1972
@@ -35,9 +35,9 @@ We can see from Figure 1 that Ontario, Saskatchewan and Alberta have had the hig
 Suppose we were interested in looking in more closely at the province with the highest spread (in terms of standard deviation) of horse populations. We present the standard deviations here:
 
 ```{r, echo=FALSE}
-horses_sd_table <- read_csv("results/horses_sd.csv")
+horses_sd_table <- read_csv("../../results/horses_sd.csv")
 largest_sd <- horses_sd_table$Province[1]
-knitr::kable(horses_sd_table, caption = 'test caption for now')
+knitr::kable(horses_sd_table, caption = 'Table of standard deviations of horse populations in Canada')
 ```
 
 Note that we define standard deviation (of a sample) as
@@ -47,7 +47,7 @@ $$s = sqrt( sum_{i = 1}^n(x_i - \bar{x}) / (n-1))$$
 Additionally, note that in Table 1 we consider the sample standard deviation of the number of horses during the same time span as Figure1.
 
 ```{r, echo=FALSE}
-knitr::include_graphics("results/horse_pop_plot_largest_sd.png")
+knitr::include_graphics("../../results/horse_pop_plot_largest_sd.png")
 
 ```
 
